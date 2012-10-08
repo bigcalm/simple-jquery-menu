@@ -1,0 +1,29 @@
+body { font-family: sans-serif; margin: 0; padding: 0; }
+a { text-decoration: none; color: #33bdec; }
+
+ul.jMenu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+ul.jMenu ul {
+	position: fixed !important;
+	list-style: none;
+	margin: 0;
+	padding: 7px 0;
+	border: solid 1px red;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	clear: both;
+	float: none;
+	background-color: #fff;
+}
+
+ul.jMenu > li { float: left; margin: 0; padding: 5px; }
+ul.jMenu li:hover { background-color: #e5f2f7; }
+ul.jMenu > li:hover { -moz-border-radius: 8px; border-radius: 8px; }	
+
+ul.jMenu > li > ul a { padding: 0 10px; }
+
+/* adding an ellipsis after menu items that have children of their own */
+ul.jMenu .hasSubMenu:after { content: "\2026"; }
